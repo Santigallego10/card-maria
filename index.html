@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La trivia de mari y santi</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Pantalla de Menú Principal -->
+      <div class="menu-screen active">
+        <h1>❤️ Trivia del Amor ❤️</h1>
+        <p>Bienvenida a la prueba definitiva de amor!</p>
+        <button class="button" onclick="startPreGame()">Jugar</button>
+      </div>
+      <!-- Pantalla de pre Juego -->
+      <div class="pregame-screen">
+        <p>Selecciona la dificultada que desees.</p>
+        <button id="easy-btn" class="button" onclick="clickDifficulty('easy')">Fácil</button>
+        <button id="medium-btn" class="button" onclick="clickDifficulty('medium')">Medio</button>
+        <button id="hard-btn" class="button" onclick="clickDifficulty('hard')">Difícil</button>
+        <p id="dif-message"></p>
+        <div id="preplay-btn">
+          <p style="color: rgb(221, 105, 184);">Ya no te molesto mas mi vida. A jugar!</p>
+          <button class="button" onclick="startGame()">Ir a la primera pregunta</button>
+        </div>
+      </div>
+
+      <!-- Pantalla de Juego -->
+      <div class="game-screen">
+        <div class="progress"></div>
+        <h2 class="question"></h2>
+        <div class="options"></div>
+      </div>
+
+      <!-- Pantalla de Resultados -->
+      <div class="result-screen">
+        <h1>¡Terminaste!</h1>
+        <div class="score"></div>
+        <div class="message"></div>
+        <button class="button" onclick="restartGame()">Jugar de nuevo</button>
+        <button class="button" onclick="showMenu()">Menú Principal</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #ff4b6e;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.menu-screen,
+.game-screen,
+.result-screen,
+.pregame-screen,
+#preplay-btn {
+  display: none;
+}
+
+#preplay-btn {
+  margin-top: 20px;
+}
+
+.active {
+  display: block;
+}
+
+.button {
+  background: #ff4b6e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.option {
+  background: white;
+  border: 2px solid #ff4b6e;
+  color: #ff4b6e;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.option:hover {
+  background: #ff4b6e;
+  color: white;
+}
+
+.heart-icon {
+  color: #ff4b6e;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.progress {
+  margin: 20px 0;
+  color: #ff4b6e;
+  font-weight: bold;
+}
+
+.score {
+  font-size: 1.5rem;
+  color: #ff4b6e;
+  margin: 20px 0;
+}
+
+.message {
+  margin: 20px 0;
+  font-style: italic;
+  color: #666;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
