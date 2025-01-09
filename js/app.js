@@ -121,7 +121,6 @@ function checkAnswer(selectedOption) {
 
   if (selectedOption === question.correct) {
     score++;
-    alert(question.message);
   }
 
   currentQuestion++;
